@@ -78,7 +78,7 @@ https://templatemo.com/tm-573-eduwell
             <h2>Hello, I'm <br><em>Mitali Pilankar!</em></h2>
             <h3>Web developer and associate software engineer. I'm a learner, geared up to examine any new tech that excites me!</h3><br>
             <div class="main-button-gradient">
-              <div class="scroll-to-section"><a href="#contact-section">Resume</a></div>
+              <div class="scroll-to-section"><a href="https://drive.google.com/file/d/1w44Mjw2n6fmJityJL4WamMcc5UCMD20U/view?usp=sharing" target="_blank">Resume</a></div>
             </div>
           </div>
         </div>
@@ -135,11 +135,11 @@ https://templatemo.com/tm-573-eduwell
                           <span class="last-span">ML</span>
                           <div class="d-flex justify-content-start align-items-end">
                             <div class="main-button-gradient me-3">
-                              <div class="scroll-to-section"><a href="#contact-section">Code</a></div>
+                              <div><a href="https://github.com/Pilankar/FashionShopping">Code</a></div>
                             </div>
-                            <div class="main-button-gradient">
-                              <div class="scroll-to-section"><a href="#contact-section">Demo</a></div>
-                            </div>
+                            <!-- <div class="main-button-gradient">
+                              <div><a href="#contact-section">Demo</a></div>
+                            </div> -->
                           </div>
                           
                         </div>
@@ -161,11 +161,11 @@ https://templatemo.com/tm-573-eduwell
                             <span class="last-span">SQL</span>
                             <div class="d-flex justify-content-start align-items-end">
                               <div class="main-button-gradient me-3">
-                                <div class="scroll-to-section"><a href="#contact-section">Code</a></div>
+                                <div><a href="https://github.com/Pilankar/Pet-Care-Website">Code</a></div>
                               </div>
-                              <div class="main-button-gradient">
+                              <!-- <div class="main-button-gradient">
                                 <div class="scroll-to-section"><a href="#contact-section">Demo</a></div>
-                              </div>
+                              </div> -->
                             </div>
                         </div>
                       </div>
@@ -187,11 +187,11 @@ https://templatemo.com/tm-573-eduwell
                           <span class="last-span">SQLite</span>
                           <div class="d-flex justify-content-start align-items-end">
                             <div class="main-button-gradient me-3">
-                              <div class="scroll-to-section"><a href="#contact-section">Code</a></div>
+                              <div><a href="#">Code</a></div>
                             </div>
-                            <div class="main-button-gradient">
-                              <div class="scroll-to-section"><a href="#contact-section">Demo</a></div>
-                            </div>
+                            <!-- <div class="main-button-gradient">
+                              <div><a href="#contact-section">Demo</a></div>
+                            </div> -->
                           </div>
                         </div>
                       </div>
@@ -339,7 +339,7 @@ https://templatemo.com/tm-573-eduwell
             <img src="assets/images/maxim-ilyahov-0aRycsfH57A-unsplash.jpg" alt="contact"
             class="rounded-3">
             <div class="row">
-              <div class="col-lg-6 offset-lg-1">
+              <div class="col-lg-7 offset-lg-1">
                 <div class="contact-info">
                   <div class="icon">
                     <i class="fa-solid fa-envelope"></i>
@@ -352,7 +352,7 @@ https://templatemo.com/tm-573-eduwell
           </div>
         </div>
         <div class="col-lg-4">
-          <form id="contact" action="" method="post">
+          <form id="contact" method="get">
             <div class="row">
               <div class="col-lg-12">
                 <div class="section-heading">
@@ -361,12 +361,12 @@ https://templatemo.com/tm-573-eduwell
               </div>
               <div class="col-lg-12">
                 <fieldset>
-                  <input type="name" name="name" id="name" placeholder="Full Name" autocomplete="on" required>
+                  <input type="name" name="name" id="name" placeholder="Full Name" autocomplete="on">
                 </fieldset>
               </div>
               <div class="col-lg-12">
                 <fieldset>
-                  <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">
+                  <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email">
                 </fieldset>
               </div>
               <div class="col-lg-12">
@@ -376,7 +376,7 @@ https://templatemo.com/tm-573-eduwell
               </div>
               <div class="col-lg-12">
                 <fieldset>
-                  <button type="submit" id="form-submit" class="main-gradient-button">Send Message</button>
+                  <button id="form-submit" class="main-gradient-button" onclick="return SendMsg()">Send Message</button>
                   <!-- <a href="mailto:pilankar.mitali07@gmail.com?subject=Mail from person&body=msg" id="form-submit" class="main-gradient-button">Send Message</a> -->
                 </fieldset>
               </div>
@@ -385,8 +385,8 @@ https://templatemo.com/tm-573-eduwell
         </div>
         <div class="col-lg-12">
           <ul class="social-icons">
-            <li><a href="#"><i class="fa fa-brands fa-linkedin"></i></a></li>
-            <li><a href="#"><i class="fa fa-brands fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/mitali-pilankar-616077219/"><i class="fa fa-brands fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/Pilankar"><i class="fa fa-brands fa-github"></i></a></li>
             <li><a href="#"><i class="fa-brands fa-dev"></i></a></li>
           </ul>
         </div>
@@ -446,7 +446,7 @@ https://templatemo.com/tm-573-eduwell
         };
 
         $('.main-menu, .responsive-menu, .scroll-to-section').on('click', 'a', function (e) {
-          e.preventDefault();
+          // e.preventDefault();
           showSection($(this).attr('href'), true);
         });
 

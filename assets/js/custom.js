@@ -293,3 +293,28 @@
 
 
 })(window.jQuery);
+
+
+function SendMsg() {
+	var name = document.getElementById('name').value;
+	var email = document.getElementById('email').value;
+	var msg = document.getElementById('message').value;
+	var fullmsg = "Hello Mitali, This mail is from "+email+". \nFollowing is the message: "+ msg +". Thanks and Regards, \n" + name ;
+
+	if (name==="") {
+		document.getElementById('name').focus();
+		return false;
+	}
+	if (email==="") {
+		document.getElementById('email').focus();
+		return false;
+	}
+	if (msg==="") {
+		document.getElementById('message').focus();
+		return false;
+	}
+	window.location.href = "mailto:pilankar.mitali07@gmail.com?subject=Mail from "+ name +"&body="+ fullmsg;
+	// window.location.href = "/";
+	// e.preventDefault();
+	return true;
+}
